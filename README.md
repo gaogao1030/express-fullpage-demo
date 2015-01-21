@@ -4,4 +4,4 @@
   * Install project dependencies: `npm install`
   * Install assets using Bower: `bower install`
   * Generate static assets using Grunt: `grunt`
-  * Start the application with: `nodemon main.coffee`
+  * grunt
