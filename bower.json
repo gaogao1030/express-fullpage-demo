@@ -1,0 +1,21 @@
+{
+  "name": "express4-fullpage",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gaogao1030/express-fullpage-demo",
+  "authors": [
+    "gaogao <gaoyh@cimu.com.cn>"
+  ],
+  "description": "this is demo",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "~2.5.4"
+  }
+}
