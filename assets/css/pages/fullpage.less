@@ -1,4 +1,15 @@
-.fixed {
-  position: fixed;
-  z-index:100;
+@import "../base";
+@import "../lesshat";
+.rect {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: #000;
+  z-index: 1000;
+  //.transition(all 0.7s ease-out);
+  &.movedown {
+    top: 200%;
+    left: 50%;
+    margin-top: 10%;
+  }
 }

@@ -13,7 +13,13 @@ module.exports = function(grunt){
         src:[
           './components/fullpage.js/jquery.fullPage.css'
         ],
-        dest: './public/stylesheets/demo.css'
+        dest: './public/stylesheets/demo.css',
+      },
+      lesshat:{
+        src:[
+          './components/lesshat/build/lesshat.less'
+        ],
+        dest: './assets/css/lesshat.less',
       }
     },
     uglify: {
