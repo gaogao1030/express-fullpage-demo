@@ -1,5 +1,15 @@
 extends layout
+block assets
+  != js('pages/fullpage')
+  != css('pages/fullpage')
 
 block content
-  h1= title
+  h1.fixed
     p this is fullpage demo1
+  #fullpage
+    .section
+      |1
+    .section
+      |2
+    .section
+      |3

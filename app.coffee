@@ -6,7 +6,6 @@ cookieParser = require("cookie-parser")
 bodyParser = require("body-parser")
 routes = require("./routes/index")
 users = require("./routes/users")
-demo = require("./routes/fullpage")
 app = express()
 
 # view engine setup
@@ -15,6 +14,7 @@ app.set "view engine", "jade"
 
 # uncomment after placing your favicon in /public
 #app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(require("connect-assets")())
 app.use logger("dev")
 app.use bodyParser.json()
 app.use bodyParser.urlencoded(extended: false)
@@ -23,7 +23,6 @@ app.use require("less-middleware")(path.join(__dirname, "public"))
 app.use express.static(path.join(__dirname, "public"))
 app.use "/", routes
 app.use "/users", users
-app.use "/demo", demo
 
 # catch 404 and forward to error handler
 app.use (req, res, next) ->

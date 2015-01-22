@@ -29,7 +29,7 @@ module.exports = function(grunt){
         script: 'main.coffee',
         options: {
           args: ['dev'],
-//          nodeArgs: ['--nodejs','--debug'],
+          nodeArgs: ['--nodejs','--debug'],
           callback: function (nodemon) {
             //nodemon.on('restart',function(){
             //  grunt.task.run('concat');
@@ -66,5 +66,6 @@ module.exports = function(grunt){
 
  //   grunt.registerTask('test', ['jshint', 'qunit']);
     grunt.registerTask('default', ['concat','uglify','nodemon']);
+    grunt.registerTask('start', ['concat','nodemon']);
 //    grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
 };
