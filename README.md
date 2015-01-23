@@ -7,5 +7,5 @@
   6. open 127.0.0.1/demo in browser
 
 ## addtional
-  * if you wang to debug app you can install node-inspector and open 127.0.0.1:8080/debug?port=5858
+  * if you want to debug app you can install node-inspector and open 127.0.0.1:8080/debug?port=5858
   
